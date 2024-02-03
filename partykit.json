@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "toolmaker-backend",
+  "main": "src/server.ts",
+  "compatibilityDate": "2024-02-03",
+  "serve": {
+    "path": "public",
+    "build": "src/client.tsx"
+  }
+}
