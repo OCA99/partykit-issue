@@ -1,5 +1,3 @@
-// @ts-ignore
-import collect from "../utils/collect.js"
 import {type GitHttpRequest, type GitHttpResponse} from "isomorphic-git";
 
 /**
@@ -16,11 +14,6 @@ export async function request(
 		headers = {},
 		body,
 	}: GitHttpRequest): Promise<GitHttpResponse> {
-	// streaming uploads aren't possible yet in the browser
-	if (body) {
-		body = await collect(body)
-	}
-
 	const res = await fetch(url, {method, headers, body})
 	const iter = res.body && res.body.getReader
 
