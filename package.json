@@ -7,11 +7,18 @@
     "deploy": "partykit deploy"
   },
   "dependencies": {
+    "browserfs": "^1.4.3",
+    "codemirror": "^5.65.16",
+    "isomorphic-git": "^1.25.3",
     "partysocket": "^0.0.25",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "y-codemirror": "^3.0.1",
+    "y-partykit": "^0.0.23",
+    "yjs": "^13.6.11"
   },
   "devDependencies": {
+    "@types/codemirror": "^5.60.15",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "partykit": "^0.0.81",
