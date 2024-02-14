@@ -3,6 +3,11 @@
   "name": "toolmaker-backend",
   "main": "src/server.ts",
   "compatibilityDate": "2024-02-03",
+  "build": {
+    "alias": {
+      "safe-buffer": "./src/buffer-compat"
+    }
+  },
   "serve": {
     "path": "public",
     "build": "src/client.tsx"
